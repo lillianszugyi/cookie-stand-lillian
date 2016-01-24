@@ -16,7 +16,6 @@ function Store (maxCustomer, minCustomer, avgCookies) {
 
   for (var i = 0; i < openHours.length; i++) {
     var hourlyCookies = cookiesPerHour(this.maxCustomer, this.minCustomer, this.avgCookies);
-    console.log(hourlyCookies);
     this.cookiesArr.push(hourlyCookies);
   };
 }
@@ -27,5 +26,8 @@ var southcenter = new Store (11, 38, 1.9);
 var bellevueSquare = new Store (20, 48, 3.3);
 var alki = new Store (3, 24, 2.6);
 
-// Display the values of each array as unordered lists in the browser (or a table)
+// Display the values of each array as unordered lists in the browser.
+pikePlace.cookiesArr
+
+
 // Display the lists on index.html. We will be adding features to this application and working with its layout throughout the week.
