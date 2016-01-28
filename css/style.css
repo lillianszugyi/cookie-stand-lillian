@@ -1,17 +1,18 @@
+h1, h2, h3 {
+  font-family: 'Walter Turncoat', cursive;
+}
+
 body {
   text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Karma', serif;
 }
 
 ul, li {
   text-align: left;
-  font-weight: normal;
+font-family: 'Cutive Mono', monospace;
 }
 
-h3 {
-  font-weight: bold;
-}
-
-.total {
-  font-weight: bold;
+img {
+  width: 40%;
+  height: auto;
 }
