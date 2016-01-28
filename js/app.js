@@ -1,5 +1,4 @@
 var storeHours = ["10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"];
-var totalCookies = 0;
 
 function random(maxCustomer, minCustomer) {
   return Math.random() * (maxCustomer - minCustomer) + minCustomer;
@@ -29,19 +28,33 @@ var bellevueSquare = new Store ("Bellevue Square", 20, 48, 3.3);
 var alki = new Store ("Alki", 3, 24, 2.6);
 
 function writeSalesProjection(store, elementId) {
-  var content = "<h3>" + store.name + "</h3><ul>";
+  var totalCookies = 0;
+  var content = "<th scope='row'>" + store.name + "</th>";
 
   for (var i = 0; i < storeHours.length; i++) {
-    content += "<li>" + storeHours[i] + ": " + store.cookiesArr[i] + "</li>";
-    totalCookies = totalCookies + store.cookiesArr[i]
+    content += "<td>" + store.cookiesArr[i] + "</td>";
+    totalCookies = totalCookies + store.cookiesArr[i];
   }
 
-  content += "<p class =\"total\">Total: " + totalCookies + " Cookies Needed Per Day</p></ul><hr>";
+  content += "<th scope='row'>" + totalCookies + "</th>";
 
   var elStore = document.getElementById(elementId);
   elStore.innerHTML = content;
+
 }
 
+function writeStoreHours(elementId) {
+  var hours = "<th></th>";
+    for (var i = 0; i < storeHours.length; i++) {
+      hours += "<th>" + storeHours[i] + "</th>";
+    }
+    hours += "<th>Totals</th>"
+
+    var elHours = document.getElementById(elementId);
+    elHours.innerHTML = hours;
+}
+
+writeStoreHours("hours");
 writeSalesProjection(pikePlace, "pikePlace");
 writeSalesProjection(seatacAirport, "seatacAirport");
 writeSalesProjection(southcenter, "southcenter");
