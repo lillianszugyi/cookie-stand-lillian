@@ -1,18 +1,77 @@
+* {
+  margin: 20px;
+}
+
+header {
+  text-align: center;
+}
+
 h1, h2, h3 {
   font-family: 'Walter Turncoat', cursive;
+  color: #A74934;
 }
 
 body {
-  text-align: center;
   font-family: 'Karma', serif;
 }
 
-ul, li {
-  text-align: left;
-font-family: 'Cutive Mono', monospace;
+ul, li, table {
+  font-family: 'Cutive Mono', monospace;
 }
 
 img {
   width: 40%;
   height: auto;
+}
+
+table {
+  text-align: center;
+}
+.box {
+  border: 1px solid;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.em {
+  font-style: italic;
+  color: #C1744C;
+  text-align: center;
+}
+
+#white {
+  background-color: #F4F4E9;
+  background-color: rgb(244,244,233);
+  padding: 50px;
+  border-radius: 100%;
+  display: table;}
+
+#beige {
+  background-color: #D9B87C;
+  background-color: rgb(217,184,124);
+  padding: 50px;
+  border-radius: 100%;
+  display: table;}
+
+#orange {
+  background-color: #C1744C;
+  background-color: rgb(193,116,76);
+  padding: 50px;
+  border-radius: 100%;
+  display: table;}
+
+#darkorange {
+  background-color: #A74934;
+  background-color: rgb(167,73,52);
+  padding: 50px;
+  border-radius: 100%;
+  display: table;}
+
+#black {
+  background-color: #11120C;
+  background-color: rgb(17,18,12);
+  padding: 50px;
+  border-radius: 100%;
+  display: table;
 }
