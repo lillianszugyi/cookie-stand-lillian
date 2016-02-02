@@ -1,44 +1,150 @@
-* {
-  margin: 20px;
-}
+img {
+  width: 20%;
+  float: left;
+  padding: 20px;}
+
+.logo {
+  display: block;
+  clear: left;
+  color: #F4F4E9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  text-shadow: 0 0 0.2em #808080;
+  padding-left: 20px;}
+
+.tagline {
+  clear: left;
+  color: #F4F4E9;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  text-shadow: 0 0 0.2em #808080;
+  padding-left: 20px;}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  font-weight: bold;}
+
+.navBlock {
+  padding: 0px 30px;}
+
+.block {
+  height: auto;
+  border: 30px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(17,18,12,0.2);}
+
+.eventBlock {
+  display: inline-block;
+  float: left;
+  margin: 5px;
+  padding: 1px;}
+
+a {
+  color: #D9B87C;}
+
+a:hover {
+  color: #A74934;}
 
 header {
-  text-align: center;
-}
+  margin-bottom: 50px;
+  max-width: 100%;
+  height: auto;
+  background-image: url(../assets/header_960.png);}
+
+.header h3 {
+  color: #F4F4E9;
+  display: block;}
+
+.header p {
+  clear: both;}
+
+.header {
+  border-radius: 4px;
+  background-color: rgba(17,18,12, 0.5);
+  margin: 20px;
+  padding: 30px;
+  display: block;
+  float: right;
+  color: #D9B87C;}
+
+.title {
+  height: 200px;
+  color: #F4F4E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: 0 0 0.2em #808080;}
+
+#About {
+  background-image: url(../assets/about.png);
+  clear: both;}
+
+#Stores {
+  background-image: url(../assets/stores.png);
+  clear: both;}
+
+#Events {
+  background-image: url(../assets/events.png);
+  clear: both;}
+
+#Shop {
+  background-image: url(../assets/shop.png);
+  clear: both;}
+
+.content {
+  max-width: 100%;
+  height: auto;
+  background-color: #F4F4E9;
+  padding: 50px;
+  font-size: 1.5em;}
+
+.contentW {
+  margin-bottom: 50px;
+  max-width: 100%;
+  height: auto;
+  padding: 50px;
+  font-size: 1.5em;}
+
+.eventFig {
+  width: 150px;
+  height: 150px;
+  display: block;
+  }
+
+.tshirt {
+  background-image: url(../assets/shirt.jpg);
+  width: 900px;}
 
 h1, h2, h3 {
-  font-family: 'Walter Turncoat', cursive;
-  color: #A74934;
-}
+  float: left;
+  color: #A74934;}
 
-body {
-  font-family: 'Karma', serif;
-}
-
-ul, li, table {
-  font-family: 'Cutive Mono', monospace;
-}
-
-img {
-  width: 40%;
-  height: auto;
-}
+li {
+  display:inline;
+  list-style:none;}
 
 table {
-  text-align: center;
-}
-.box {
-  border: 1px solid;
-  text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
-}
+  text-align: center;}
 
 .em {
   font-style: italic;
   color: #C1744C;
+  text-align: center;}
+
+.footer {
+  background-color: #C1744C;
+  color: #F4F4E9;
+  padding: 20px;
   text-align: center;
-}
+  justify-content: center;}
 
 #white {
   background-color: #F4F4E9;
@@ -73,5 +179,4 @@ table {
   background-color: rgb(17,18,12);
   padding: 50px;
   border-radius: 100%;
-  display: table;
-}
+  display: table;}

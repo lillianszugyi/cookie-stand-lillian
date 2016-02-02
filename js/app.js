@@ -48,7 +48,7 @@ function writeStoreHours(elementId) {
     for (var i = 0; i < storeHours.length; i++) {
       hours += "<th>" + storeHours[i] + "</th>";
     }
-    hours += "<th>Totals</th>"
+    hours += "<th>Daily Totals</th>"
 
     var elHours = document.getElementById(elementId);
     elHours.innerHTML = hours;
